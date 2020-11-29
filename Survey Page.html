@@ -1,0 +1,85 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="/survey/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1 id="title">SNR Survey Form</h1>
+                <p id="description">
+                    <i>We appreciate the time taken to complete this survey</i>
+                </p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id= "name-label" for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name here" />
+                </div>
+                <div class="form-group">
+                    <label id= "email-label" for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email here" />
+                </div>
+                <div class="form-group">
+                    <label id = "number-label" for="duration">How long have you been employed at SNR
+                        <span>(optional)</span></label>
+                    <input type="number" id="number" name="duration" required min="1" max="35"
+                        placeholder="Enter duration of employment here" />
+                </div>
+                <div class="form-group">
+                    <label for="dropdown-selector-role">Which of these best describe your role at SNR</label>
+                    <select name="dropdown-selector-role" id="dropdown">
+                        <option value="role">Select official role</option>
+                        <option value="role">Geotechnical Engineer</option>
+                        <option value="role">Civil and Infrastructural Engineer</option>
+                        <option value="role">Geoscientist</option>
+                        <option value="role">Explorations Engineer</option>
+                        <option value="role">Mining Engineer</option>
+                        <option value="role">Hydrogeological Engineer</option>
+                        <option value="role">Surveyor</option>
+                        <option value="role">Auger Operator</option>
+                        <option value="role">IT, Logistics and Procurement Officer</option>
+                        <option value="role">Geologist</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Select your rank</p>
+                    <input type="radio" name="position" value="junior engineer"/>
+                    <label for="position1"> Junior Engineer</label><br>
+                    <input type="radio" name="position" value="senior engineer"/>
+                    <label for="position2"> Senior Engineer</label><br>
+                    <input type="radio" name="position" value="other"/>
+                    <label for="position3"> Other</label><input type="text" name="other" value="Specify here" />
+                </div>
+                <div class="form-group">
+                    <p>Which of the areas below are you most dissatisfied about in SNR
+                        <span>(check all that apply)</span></p>
+                    <input type="checkbox" id="shortfall1" name="shortfall1" value="salary" />
+                    <label for="shortfall1">Low Remunerations</label><br>
+                    <input type="checkbox" id="shortfall2" name="shortfall2" value="leave days" />
+                    <label for="shortfall2">Insufficient Number of Leave Days</label><br>
+                    <input type="checkbox" id="shortfall3" name="shortfall3" value="overtime bonuses" />
+                    <label for="shortfall3">No/Insufficient bonuses for overtime</label><br>
+                    <input type="checkbox" id="shortfall4" name="shortfall4" value="PPE provision" />
+                    <label for="shortfall4">Unavailability of PPE to personnels going on field projects</label>
+                </div>
+                <div class="form-group">
+                    <label for= "comments">Any comments or suggestions? Drop them here</label>
+                    <textarea name= "comments" id= "comments" placeholder="Enter your suggestions here"></textarea>
+                </div>
+                <div>
+                    <input type = "submit" name = "submit" id = "submit" value = "Submit">
+                </div>
+            </form>
+        </div>
+    </body>
+
+    </html>
+</DOCTYPE>
